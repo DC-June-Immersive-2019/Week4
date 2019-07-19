@@ -1,42 +1,48 @@
+
 :root {
+    --fontsize:30px;
     box-sizing: border-box;
+    --boxshadow: 2px 2px 3px rgba(0,0,0,.5);
+    --primary: #bbaadd;
+    --txt: #353535;
+    --bg: #efefef;
 }
-*, *::before, *::after {
+
+*,*::before,*::after {
     box-sizing: inherit;
 }
+input {font-size:inherit;width:85px;}
 body {
-    width: 97vw;
+    width:97vw;
     margin: 0 auto;
+    background-color: var(--bg);
+    color: var(--txt);
+    font-size: var(--fontsize);
 }
-
 .form-container {
-    position: absolute;
-    top: 0px;
-    left: 10px;
-    border: 1px solid #ddd;
-    padding: 10px;
+    position:absolute;
+    top:0px;
+    left:10px;
+    border:1px solid #ddd;
+    padding:10px;
 }
-.form-container input {
-    font-size: inherit;
-    width: 85px;
-}
-
 .box-container {
-    position: relative;
-    height: 400px;
+    position:relative;
+    height:400px;
     width: 600px;
-    border: 1px solid #ddd;
-    margin-top: 60px;
-    overflow: hidden;
+    border:1px solid red;
+    margin-top:60px;
+    overflow:hidden;
 }
 
 .box {
-    height: 50px;
-    width: 50px;
-    border: 1px solid rgba(50,50,50,.8);
-    box-shadow: 2px 2px 3px rgba(0,0,0,.5);
-    padding: 10px;
-    margin: 10px;
-    position: absolute;
-    background-color: lavender;
+    color: var(--txt);
+    height:50px;
+    width:50px;
+    border:1px solid black;
+    box-shadow: var(--boxshadow);
+    padding:10px;
+    margin:10px;
+    position:absolute;
+    transition: all 500ms ease-in-out;
 }

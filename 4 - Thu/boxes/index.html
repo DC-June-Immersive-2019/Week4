@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,22 @@
     <link rel="stylesheet" href="./index.css"/>
     <title>Boxes</title>
 </head>
-
 <body>
-    <main class="container">
-        <section class="form-container">
-        </section>
-        <section class="box-container">
-            <div class="box"></div>
-        </section>
-    </main>
+
+<main class="container">
+    <section class="form-container">
+        <label for="x">X:</label>
+        <input type="number" required name="x" value="100"/>
+        <label for="y">Y:</label>
+        <input type="number" required name="y" value="100"/>
+        <label for="color">Color:</label>
+        <input type="color" name="color" />
+        <button>Add Box</button>
+    </section>
+    <section class="box-container">
+    </section>
+</main>
+
     <script src="index.js"></script>
 </body>
 </html>

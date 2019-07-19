@@ -1,0 +1,40 @@
+html {
+    box-sizing: border-box;
+}
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+
+.btn-container {
+    width:87vw;
+    margin: 3rem auto;
+}
+
+button {
+    padding:.5rem;
+    border: 1px solid currentColor;
+    background-color: rebeccapurple;
+    color: seashell;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:inherit;
+    transition: background-color ease-out 300ms;
+    min-width:200px;
+}
+button:hover {
+    background-color:mediumpurple;
+    border-color:purple;
+}
+button:disabled {
+    color:mediumpurple;
+    border-color:purple;
+    background-color: seashell;
+
+}
+[name="addBtn"] {
+    background-color: darkslategray;
+    color:seashell;
+}
+[name="addBtn"]:hover {
+    background-color: lightslategray;
+
+}
